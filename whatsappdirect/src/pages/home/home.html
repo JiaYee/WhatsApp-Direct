@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Ionic Blank
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <div style="height:25%;width:100%"></div>
+
+    <ion-item>
+      <ion-label floating>Enter phone number...</ion-label>
+      <ion-input [(ngModel)]="phone"></ion-input>
+    </ion-item>
+
+    <button block ion-button icon-left color="light" (click)="pasteClipboard()">
+    <ion-icon name="copy"></ion-icon>
+    Paste from clipboard
+    </button>
+
+    <button block ion-button icon-left color="secondary" (click)="wsNow()">
+    <ion-icon name="call"></ion-icon>
+    Whatsapp Now!
+    </button>
+
+</ion-content>
